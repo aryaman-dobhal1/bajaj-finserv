@@ -315,9 +315,9 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`✅ Server running on port ${PORT}`);
-  console.log(`📧 Official Email: ${process.env.OFFICIAL_EMAIL || 'NOT SET'}`);
-  console.log(`🤖 Gemini API: ${process.env.GEMINI_API_KEY ? 'Configured' : 'NOT CONFIGURED'}`);
+  console.log(`Server running on port ${PORT}`);
+  console.log(`Official Email: ${process.env.OFFICIAL_EMAIL || 'NOT SET'}`);
+  console.log(`Gemini API: ${process.env.GEMINI_API_KEY ? 'Configured' : 'NOT CONFIGURED'}`);
 });
 
 module.exports = app;
